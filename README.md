@@ -15,7 +15,8 @@ We will cover the use cases above as swiftly as possible as you should be famili
 
 Once you have managed to fork the repo, take some time to familiarise what your working directory is and once you are comfortable we can start with the first example:-
 
-> [!NOTE] The excercises live in their own branch
+> [!NOTE]
+> The excercises live in their own branch
 > You should be able to switch to any of these branches by simply running
 >
 > ```bash
