@@ -4,13 +4,9 @@ Well you made it to switch to this branch. If you used `switch` than thats wonde
 
 `checkout` is the old way and the reason why its less prefferred is the ambiguity however as long you manage then that is completely fine!
 
-<details>
-<summary>I want to know more</summary>
-Two new commands "git switch" and "git restore" are introduced to split "checking out a branch to work on advancing its history" and
-   "checking out paths out of the index and/or a tree-ish to work on
-   advancing the current history" out of the single "git checkout"
-   command.
-   </details>
+> [!TIP]
+>
+> <details> <summary>I want to know more</summary> Two new commands "git switch" and "git restore" are introduced to split "checking out a branch to work on advancing its history" and "checking out paths out of the index and/or a tree-ish to work on advancing the current history" out of the single "git checkout" command. </details>
 
 Lets take a look at all the branches we have in the repository
 
