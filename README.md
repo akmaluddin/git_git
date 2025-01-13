@@ -58,3 +58,11 @@ Now we are in a branch of our own, we can create a commit ourselves. For this ex
 ```bash
 git commit -m "hello" --allow-empty
 ```
+
+Lets observe our commit in the history
+
+```bash
+git log --oneline --graph
+```
+
+Lets take time to reason out the history logs
