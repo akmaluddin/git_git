@@ -10,9 +10,9 @@ Well you made it to switch to this branch. If you used `switch` than thats wonde
 
 Lets take a look at all the branches we have in the repository
 
-<details>
-<summary>How do we do that?</summary>
-To view the remote branches
+> [!TIP]
+>
+> <details> <summary>How do we do that?</summary> To view the remote branches
 
 ```bash
 git branch -r
