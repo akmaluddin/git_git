@@ -1,32 +1,66 @@
-Welcome to git intro workshop. First things first fork this repository so that you could maintain your own remote :)
+# Branching
 
-We will cover the basics of using git with some contrived but practical use cases
+Well you made it to switch to this branch. If you used `switch` than thats wonderful
 
-Forking is an example of a git task, however not necessarily something you will bump into in your day-to-day tasks
+`checkout` is the old way and the reason why its less prefferred is the ambiguity however as long you manage then that is completely fine!
 
-Half of your workflow as a developer will just be 4 simple commands:
+<details>
+<summary>I want to know more</summary>
+Two new commands "git switch" and "git restore" are introduced to split "checking out a branch to work on advancing its history" and
+   "checking out paths out of the index and/or a tree-ish to work on
+   advancing the current history" out of the single "git checkout"
+   command.
+   </details>
 
-- git status
-- git add
-- git commit
-- git switch
+Lets take a look at all the branches we have in the repository
 
-We will cover the use cases above as swiftly as possible as you should be familiar with it
+<details>
+<summary>How do we do that?</summary>
+To view the remote branches
 
-Once you have managed to fork the repo, take some time to familiarise what your working directory is and once you are comfortable we can start with the first example:-
+```bash
+git branch -r
+```
 
-> [!NOTE]
-> The excercises live in their own branch
-> You should be able to switch to any of these branches by simply running
->
-> ```bash
-> git switch 01-branching
-> ```
->
-> or the old way
->
-> ```bash
-> git checkout 01-branching
-> ```
+To view local branches only
 
-1. [01-branching](/akmaluddin/git_git/tree/01-branching)
+```bash
+git branch
+```
+
+To view all branches
+
+```bash
+git branch -a
+```
+
+</details>
+
+Lets create a branch from this
+
+```bash
+git switch -c your_branch_name
+```
+
+You have now moved over to a new branch, and your git history will be based on which ever branch you have branched from
+
+You will observe your terminal will indicate as such with something along the lines of
+
+```bash
+branch 'test' set up to track 'origin/01-branching'.
+Switched to a new branch 'test'
+```
+
+however... sometimes we are in a separate branch and would like to create a branch from another branch
+
+to do so...
+
+```bash
+git switch -c your_branch_name starting_point
+```
+
+Now we are in a branch of our own, we can create a commit ourselves. For this excercise we are going to commit an empty change
+
+```bash
+git commit -m "hello" --allow-empty
+```
