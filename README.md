@@ -31,3 +31,32 @@ Take your time to familiarise with the two options. But how do we restore our me
 ```bash
 git reset --merge ORIG_HEAD
 ```
+
+It seems like we only wanted to pull in certain changes from your colleagues branch and not the whole branch
+
+<details>
+<summary>Why would you ever need it?</summary>
+Most of the time this is never needed, but lets say you depend on a feature developed by another branch and you would only want to incorporate those changes without bringing in other changes that could potentially be unstable
+</details>
+
+There are a few options:-
+
+1. Cherry-pick
+
+Identify the hash
+
+```bash
+git log --oneline origin/SUB-03-colleague-changes
+```
+
+cherry pick
+
+```bash
+git cherry-pick {hash}
+```
+
+2. Restore
+
+```bash
+git restore --source origin/SUB-03-colleague-changes {file}
+```
