@@ -62,3 +62,13 @@ git worktree remove {folder-name}
 ```
 
 ## Linear history or not linear history
+
+Now lets take a look at a nonlinear history that contains multiple branches.
+
+```bash
+git switch SUB-04-multi-merges
+```
+
+observe the history and can you walk back comfortably
+
+best practice would be to maintain a linear git history making it easier to reason about the changes made
