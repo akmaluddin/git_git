@@ -60,3 +60,5 @@ to clean up the worktree run
 ```bash
 git worktree remove {folder-name}
 ```
+
+## Linear history or not linear history
