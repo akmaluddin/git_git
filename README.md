@@ -32,7 +32,7 @@ Take your time to familiarise with the two options. But how do we restore our me
 git reset --merge ORIG_HEAD
 ```
 
-It seems like we only wanted to pull in certain changes from your colleagues branch and not the whole branch
+It seems like we only wanted to pull in certain changes of files from your colleagues branch and not the whole branch
 
 <details>
 <summary>Why would you ever need it?</summary>
@@ -55,8 +55,23 @@ cherry pick
 git cherry-pick {hash}
 ```
 
+<details>
+<summary>You could take changes in a range</summary>
+You can take changes within a range of commits. To do so identify the start and end range
+
+```bash
+git cherry-pick {start}...{end}
+```
+
+</details>
+
 2. Restore
 
 ```bash
 git restore --source origin/SUB-03-colleague-changes {file}
 ```
+
+> [!NOTE]
+> These two commands are not the same and not interchangeable. One takes commits and along with it takes all the changes in said commits
+> aside to that it also takes in the commit and incorporate it into your git history
+> The other takes in files and would take neither the commit changes and commit history
