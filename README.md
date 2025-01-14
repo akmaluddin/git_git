@@ -32,3 +32,4 @@ Once you have managed to fork the repo, take some time to familiarise what your 
 1. [01-branching](https://github.com/akmaluddin/git_git/tree/01-branching)
 2. [02-changes](https://github.com/akmaluddin/git_git/tree/02-changes)
 3. [03-changes-from-remote](https://github.com/akmaluddin/git_git/tree/03-changes-from-remote)
+4. [04-traversing-history](https://github.com/akmaluddin/git_git/tree/04-traversing-history)
