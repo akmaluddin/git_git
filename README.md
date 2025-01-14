@@ -66,3 +66,16 @@ git log --oneline --graph
 ```
 
 Lets take time to reason out the history logs
+
+How should we clean up the branches?
+
+```bash
+git branch -d {branch_name}
+```
+
+<details>
+<summary>how to delete remote branches</summary>
+```bash
+git push origin -d {branch_name}
+```
+</details>
