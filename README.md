@@ -18,10 +18,23 @@ git switch -d {sha}
 
 While this is wonderful, we now dont have a way to move back to where we started. How do we get back
 
-This is where you can move back to the branch itself.
+1. This is where you can move back to the branch itself.
 
 ```bash
 git switch {branch}
 ```
 
-Or you could utilise reflogs
+2. Walk forwards (or backwards whichever way you see it)
+
+```bash
+git reflog
+```
+
+```bash
+git switch -d HEAD@{1}
+```
+
+## Now I am proposing a different method altogether
+
+Most of the time when walking between histories you want to actually keep your current tip and the other history as separate files / folders
+This is usefull for comparisons and moving between code
