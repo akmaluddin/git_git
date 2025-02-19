@@ -60,6 +60,11 @@ This is where clean can be handy
 
 ```bash
 git clean -fdn
-```
+``` 
+
+do remember that the `n` flag is for dry run
+
+if you are happy remove the n and it should remove it
+
 
 </details>
